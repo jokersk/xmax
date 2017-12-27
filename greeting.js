@@ -83,7 +83,7 @@ greeting.prototype = {
         this.nextLine();
     },
     unhappyOnClick : function(){
-       
+        this.game.time.events.stop()
         this.text.text = ""
         this.line = [],
         this.wordIndex = 0,
