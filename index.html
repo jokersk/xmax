@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			/* background: #000000; */
+			padding:0px;
+			margin:0px;
+		}
+		.button{
+			padding: 20px;
+		}
+	</style>
+	<script src="phaser.min.js"></script>
+	<script src = "game.js"></script>
+	<script src = "greeting.js"></script>
+	<script>
+			(function() {
+				var game = new Phaser.Game(414, 736, Phaser.CANVAS, "game");
+				game.state.add("TheGame",theGame);
+				game.state.add("greeting",greeting);
+				game.state.start("TheGame");
+			})();    
+	</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
